@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>CALCULADORA</header>
+        <div id="res">
+            <p id="visor-res">0</p>
+        </div>
+        <div id="teclado-calc">
+            <div id="fileira-um" class="fileiras">
+                <div id="apagar" class="botoes" onclick="teclarC()">
+                    <div class="text-botao">C</div>
+                </div>
+                <div id="parentese" class="botoes" onclick="teclarParentese()">
+                    <div class="text-botao">()</div>
+                </div>
+                <div id="resto" class="botoes" onclick="teclarResto(), atribuirValorX()">
+                    <div class="text-botao">%</div>
+                </div>
+                <div id="dividir" class="botoes" onclick="teclarDividir(), atribuirValorX()">
+                    <div class="text-botao">/</div>
+                </div>
+            </div>
+
+            <div id="fileira-dois" class="fileiras">
+                <div id="num-sete" class="botoes" onclick="teclarSete()">
+                    <div class="text-botao">7</div>
+                </div>
+                <div id="num-oito" class="botoes" onclick="teclarOito()">
+                    <div class="text-botao">8</div>
+                </div>
+                <div id="num-nove" class="botoes" onclick="teclarNove()">
+                    <div class="text-botao">9</div>
+                </div>
+                <div id="multiplicar" class="botoes" onclick="teclarVezes(), atribuirValorX()">
+                    <div class="text-botao">X</div>
+                </div>
+            </div>
+
+            <div id="fileira-tres" class="fileiras">
+                <div id="num-quatro" class="botoes" onclick="teclarQuatro()">
+                    <div class="text-botao">4</div>
+                </div>
+                <div id="num-cinco" class="botoes" onclick="teclarCinco()">
+                    <div class="text-botao">5</div>
+                </div>
+                <div id="num-seis" class="botoes" onclick="teclarSeis()">
+                    <div class="text-botao">6</div>
+                </div>
+                <div id="menos" class="botoes" onclick="teclarMenos(), atribuirValorX()">
+                    <div class="text-botao">-</div>
+                </div>
+            </div>
+
+            <div id="fileira-quatro" class="fileiras">
+                <div id="num-um" class="botoes" onclick="teclarUm()">
+                    <div class="text-botao">1</div>
+                </div>
+                <div id="num-dois" class="botoes" onclick="teclarDois()">
+                    <div class="text-botao">2</div>
+                </div>
+                <div id="num-tres" class="botoes" onclick="teclarTres()">
+                    <div class="text-botao">3</div>
+                </div>
+                <div id="mais" class="botoes" onclick="teclarMais(), atribuirValorX()">
+                    <div class="text-botao">+</div>
+                </div>
+            </div>
+
+            <div id="fileira-cinco" class="fileiras">
+                <div id="mais-menos" class="botoes" onclick="teclarInverte()">
+                    <div class="text-botao">+/-</div>
+                </div>
+                <div id="num-0" class="botoes" onclick="teclarZero()">
+                    <div class="text-botao">0</div>
+                </div>
+                <div id="ponto" class="botoes" onclick="teclarPonto()">
+                    <div class="text-botao">.</div>
+                </div>
+                <div id="igual" class="botoes" onclick="teclarIgual()">
+                    <div class="text-botao">=</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
